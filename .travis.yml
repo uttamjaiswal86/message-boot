@@ -1,0 +1,6 @@
+language: java
+sudo: enable
+deploy: 
+ keep-history: true
+ on: 
+  branch: master
