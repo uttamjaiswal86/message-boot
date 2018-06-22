@@ -4,3 +4,7 @@ deploy:
  keep-history: true
  on: 
   branch: master
+services: 
+ - mysql
+before_install: 
+ - mysql -u root --password="root" < src/main/resources/schema-mysql.sql
